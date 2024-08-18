@@ -1,11 +1,6 @@
-Here's the updated README with instructions on how to generate the model files before running the application:
-
----
 
 # OBSTER
 ## Obesity Prediction and Meal Plan Application
-
-**THIS APPLICATION IS NOT IN ITS FINAL FORM!**
 
 This application is a web-based platform for predicting obesity levels based on user data and generating personalized meal plans. The backend is built using Flask, and the frontend is developed using React.
 

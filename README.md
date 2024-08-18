@@ -122,11 +122,8 @@ Here's the corrected section of the README with the instruction to run the appli
 - **Login**: Log in with your credentials.
 - **Predict Obesity**: Submit your physical attributes and lifestyle factors to receive an obesity prediction.
 - **Generate Meal Plan**: Based on your prediction, generate a personalized meal plan.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
+- **Generate Exercise Plan**: Receive a personalized exercise plan to support your health and fitness goals.
+  
 ## Acknowledgments
 
 - Flask for the backend framework.

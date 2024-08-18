@@ -239,7 +239,7 @@ function Home() {
               {snackSuggestion ? (
                 <div>
                   <p>{snackSuggestion.snack_suggestion}</p>
-                  <p><strong>Calories:</strong> {Math.round(snackSuggestion.calories)}kcal</p>
+                  <p><strong>Calories:</strong> {Math.round(snackSuggestion.calories)} kcal</p>
                 </div>
               ) : (
                 <p>Loading snack suggestion...</p>

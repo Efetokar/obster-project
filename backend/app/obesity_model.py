@@ -17,7 +17,7 @@ def predict_obesity(user_data):
     df = pd.get_dummies(df, columns=['Gender'], drop_first=False)
     
     # Ensure all expected features are present
-    expected_features = ['Female', 'Male', 'Age', 'Height', 'Weight', 'BMI', 'PhysicalActivityLevel', 'Waist_Width']
+    expected_features = ['Female', 'Male', 'Age', 'Height', 'Weight', 'BMI', 'PhysicalActivityLevel', 'Waist']
     
     # Add missing columns if necessary
     for feature in expected_features:

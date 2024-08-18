@@ -1,19 +1,15 @@
-Here's the updated README with instructions on how to generate the model files before running the application:
-
----
 
 # OBSTER
-## Obesity Prediction and Meal Plan Application
+## Obesity Prediction and Meal-Exercise Plan Application
 
-**THIS APPLICATION IS NOT IN ITS FINAL FORM!**
-
-This application is a web-based platform for predicting obesity levels based on user data and generating personalized meal plans. The backend is built using Flask, and the frontend is developed using React.
+This application is a web-based platform for predicting obesity levels based on user data and generating personalized meal and exercise plans. The backend is built using Flask, and the frontend is developed using React.
 
 ## Features
 
 - **User Signup and Login**: Users can sign up, verify their email, and log in.
 - **Obesity Prediction**: Predicts the user's obesity category based on their physical attributes and lifestyle factors.
 - **Personalized Meal Plans**: Generates meal plans tailored to the user's dietary preferences and health conditions.
+- **Personalized Exercise Plans**: Generates exercise plans tailored to the user's activity level preferences and health conditions.
 - **Email Verification**: Sends a verification code to the user's email during signup.
 - **Session Management**: Keeps the user logged in during the session.
 
@@ -127,11 +123,8 @@ Here's the corrected section of the README with the instruction to run the appli
 - **Login**: Log in with your credentials.
 - **Predict Obesity**: Submit your physical attributes and lifestyle factors to receive an obesity prediction.
 - **Generate Meal Plan**: Based on your prediction, generate a personalized meal plan.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
+- **Generate Exercise Plan**: Receive a personalized exercise plan to support your health and fitness goals.
+  
 ## Acknowledgments
 
 - Flask for the backend framework.

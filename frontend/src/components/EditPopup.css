@@ -1,0 +1,128 @@
+/* EditPopup.css */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+.edit-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure the popup is above everything else */
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 600px; /* Adjust width to fit more content horizontally */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  overflow-y: auto; /* Ensure content doesn't overflow the popup */
+  max-height: 90vh; /* Ensure the popup doesn't exceed the viewport height */
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+  font-size: 36px; /* Adjusted font size for better fit */
+  font-weight: 800;
+  color: #18B47C;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-container {
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #18B47C;
+  border-radius: 10px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+  color: #504F4F;
+  background-color: #fff;
+}
+
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  transition: 0.3s;
+  color: #18B47C;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container select:focus + label,
+.input-container select:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #18B47C;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radio-options {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-options label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #504F4F;
+}
+
+.radio-options input {
+  margin-right: 5px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.popup-buttons button {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #18B47C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.popup-buttons button:hover {
+  background-color: #127953;
+}

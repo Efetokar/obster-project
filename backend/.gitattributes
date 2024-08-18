@@ -1,0 +1,2 @@
+backend/app/breakfast_model.pkl filter=lfs diff=lfs merge=lfs -text
+backend/app/*.pkl filter=lfs diff=lfs merge=lfs -text

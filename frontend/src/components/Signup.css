@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+body {
+  background-color: #18B47C; /* Green background for the entire page */
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px; /* Limit the width */
+  margin: 0 auto; /* Center the container horizontally */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+
+.signup-container h2 {
+  margin-bottom: -10px;
+  font-size: 70px;
+  font-weight: 800;
+  color: #18B47C;
+}
+
+.signup-container p {
+  font-weight: 800;
+  color: #18B47C;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 350px;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 15px;
+  border: 3px solid #18B47C;
+  border-radius: 20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+  color: #504F4F;
+  background-color: #fff;
+}
+
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  transition: 0.3s;
+  color: #18B47C;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container select:focus + label,
+.input-container select:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #18B47C;
+}
+
+.signup-container .input-pair {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+}
+
+.signup-container .activity-level-container,
+.signup-container .binary-options-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px 0;
+}
+
+.signup-container .activity-level-container label,
+.signup-container .binary-options-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #18B47C;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signup-container .activity-level-buttons,
+.signup-container .binary-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-container .activity-level-buttons .activity-button,
+.signup-container .binary-options .binary-button {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  background-color: #C1E2D6;
+  color: #18B47C;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.signup-container .activity-level-buttons .activity-button.selected,
+.signup-container .binary-options .binary-button.selected {
+  background-color: #18B47C;
+  color: #fff;
+}
+
+.signup-container .button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 350px;
+}
+
+.signup-container button {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 40px;
+  background-color: #18B47C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.signup-container button:hover {
+  background-color: #127953;
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link p{
+  color: #504F4F;
+}
+
+.login-link a {
+  color: #A140DD;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(43%) sepia(90%) saturate(545%) hue-rotate(105deg) brightness(95%) contrast(97%);
+  transform: scale(1.8);
+}
+
+/* Sleep duration slider */
+.signup-container .input-container.slider-container {
+  position: relative;
+}
+
+.signup-container .input-container.slider-container label {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #18B47C;
+  pointer-events: none;
+}
+
+
+.error-tooltip {
+  color: #edb10b;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.modal-content p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.modal-content button {
+  background-color: #A140DD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.modal-content button:hover {
+  background-color: #6e2a99;
+}
